@@ -1,7 +1,6 @@
 from dataclasses import dataclass
 from datetime import datetime
 
-
 SUPPORTED_MARKET_SEGMENTS = frozenset({"main", "chinext", "star", "st"})
 
 
