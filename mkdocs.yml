@@ -1,0 +1,39 @@
+site_name: 涨停事件研究
+site_description: 中国 A 股涨停事件研究的公开代码、研究假设和验证路线
+site_url: https://runchengxie.github.io/limit-up-trading-strategies/
+repo_name: runchengxie/limit-up-trading-strategies
+repo_url: https://github.com/runchengxie/limit-up-trading-strategies
+
+theme:
+  name: material
+  language: zh
+  features:
+    - navigation.sections
+    - navigation.top
+    - search.highlight
+    - search.suggest
+    - content.code.copy
+
+plugins:
+  - search
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - pymdownx.details
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - toc:
+      permalink: true
+
+exclude_docs: |
+  superpowers/**
+
+nav:
+  - 首页: index.md
+  - 研究路线: research/strategy-research-roadmap.md
+  - 文献与研究假设: references/literature-and-broker-reports.md
+  - 维护与验证: maintenance-and-validation.md
+  - 公开发布清单: release/public-release-checklist.md
